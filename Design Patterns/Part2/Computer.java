@@ -11,6 +11,6 @@ public class Computer implements ComputerPart {
         for (int i = 0; i < parts.length; i++) {
             parts[i].accept(computerPartVisitor);
         }
-    return computerPartVisitor.visit(this);
+    computerPartVisitor.visit(this);
     }
 }
